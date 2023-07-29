@@ -226,11 +226,15 @@ function App() {
 					<Outlet />
 				</div>
 
-				<div className="container flex justify-between pb-5">
+				<div className="container flex justify-between items-center pb-5">
 					<Link to="/">
 						<div className="font-light">epic</div>
 						<div className="font-bold">notes</div>
 					</Link>
+					<div className='flex flex-col items-center justify-center font-light'>
+						<div>Kevin Lyons</div>
+						<div>&copy; {new Date().getFullYear()}</div>
+					</div>
 					<ThemeSwitch userPreference={data.requestInfo.userPrefs.theme} />
 				</div>
 			</div>
